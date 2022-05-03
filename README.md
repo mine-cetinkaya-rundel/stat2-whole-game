@@ -234,7 +234,7 @@ library(ggfortify)
 autoplot(slr_fit)
 ```
 
-![](whole-game_files/figure-gfm/unnamed-chunk-10-1.png)
+![](README_files/figure-gfm/unnamed-chunk-10-1.png)
 
 Confidence interval for a new prediction:
 
