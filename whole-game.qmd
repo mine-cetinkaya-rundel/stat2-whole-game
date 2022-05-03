@@ -1,7 +1,7 @@
 ---
 title: "STA 210"
 subtitle: "Whole game"
-format: html
+format: gfm
 editor: visual
 ---
 
@@ -48,8 +48,7 @@ predict(slr_fit, new_penguin)
 
 For data used to fit the model:
 
-::: callout-warning
-Which of the following, if any, to use?
+::: callout-warning Which of the following, if any, to use?
 I wish `augment(slr_fit)` worked...
 :::
 
@@ -66,8 +65,7 @@ predict(slr_fit, new_data = penguins)
 
 Confidence interval for the slope:
 
-::: callout-warning
-Since earlier we did `fit (y ~ x, data)` it's odd to switch gears here and do `specify()` and then `fit()`.
+::: callout-warning Since earlier we did `fit (y ~ x, data)` it's odd to switch gears here and do `specify()` and then `fit()`.
 I wonder if starting with tidymodels to begin with it's better not at all to introduce infer?
 What would be the alternative way of doing the following in tidymodels then?
 :::
@@ -112,12 +110,10 @@ get_p_value(
 
 Other inference
 
-::: callout-warning
-How do we do these with tidymodels and in a simulation-based way?
+::: callout-warning How do we do these with tidymodels and in a simulation-based way?
 
 -   Confidence interval for a new prediction
--   Prediction interval for a new prediction
-:::
+-   Prediction interval for a new prediction :::
 
 #### Theoretical inference
 
@@ -127,8 +123,7 @@ Confidence interval and hypothesis test for the slope:
 tidy(slr_fit, conf.int = TRUE)
 ```
 
-::: callout-warning
-What is the recommended way to do diagnostic plots for theoretical inference, especially since `augment()` is not designed to be used with the full data?
+::: callout-warning What is the recommended way to do diagnostic plots for theoretical inference, especially since `augment()` is not designed to be used with the full data?
 :::
 
 ```{r}
